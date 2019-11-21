@@ -1,0 +1,24 @@
+oppressed_workers =  ["Dopey", "Sneezy", "Happy", "Angry", "Doc", "Lemonjello", "Sleepy" ]
+oppressed_workers.each do |oppressed_worker| puts "#{oppressed_worker.downcase} wants to start a union!"
+end 
+
+p " -  -  -  -  -  -  -  -  -  -  -  -" 
+
+def sum_array(number_array)
+  total = 0 
+  number_array.each{ |num| total += num}
+  total
+end
+sum_array([1,2,3]) 
+
+oppressed_workers = ["Dopey", "Sneezy", "Happy", "Angry", "Doc", "Lemonjello", "Undercaffeinated" ]
+angry_chants = oppressed_workers.map{ |oppressed_worker| "#{oppressed_worker} wants to start a union!" }
+p angry_chants
+
+p " - - OR - -"
+
+oppressed_workers = ["Dopey", "Sneezy", "Happy", "Angry", "Doc", "Lemonjello", "Undercaffeinated" ]
+angry_chants = oppressed_workers.map do |oppressed_worker|
+  "#{oppressed_worker.capitalize} wants to start a union!"
+end
+p angry_chants

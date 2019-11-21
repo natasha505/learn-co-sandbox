@@ -1,0 +1,27 @@
+array = [2, 4, 6, 8]
+new_array = []
+new_array << array.map{|n|n*2}
+p new_array
+
+[10, 20, 30, 40].map{ |num| num * 2 }
+
+array = [10, 20, 30, 40]
+new_array = []
+new_array << array.reduce{|total, num| total + num}
+p new_array{}
+
+.all?         -->   everything tested by block returns TRUTHY
+.any?         -->   did anything tested by block returns TRUTHY
+.collect/.map -->   returns new array w/block logic applied
+.count        -->   which elements satisfy block/w/o block. how any total elements
+.detect/.find -->   which element satisfies block first
+.each         -->   return original, unchanged object
+.find_all     -->   which elements satisfy block
+.find_index   -->   index of the 1st element to satisfy block
+.max          -->   highest value
+.max_by       -->   highest value based on some property of the element
+.min          -->   lowest value
+.reduce       -->   reduces array to values
+.reject       -->   accumulates elements that dont make TRUTHY block expression
+.select/.find -->   accumulates elements that make TRUTHY block expression
+.sort         -->   puts values in order
